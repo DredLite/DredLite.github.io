@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>DredLite</title>
-    <style>
-      html, body {
-        font-family: sans-serif !important;
-      }
-    </style>
-  </head>
-  <body>
-    <p>Loading...</p>
-    <script>
-      open(`https://test.drednot.io/invite/${location.hash.slice(1)}`, '_parent');
-    </script>
-  </body>
+
+<head>
+  <title>DredLite</title>
+  <style>
+    html,
+    body {
+      font-family: sans-serif !important;
+    }
+  </style>
+</head>
+
+<body>
+<p>Loading...</p>
+<script>
+
+let w;
+  
+if(location.hash) {
+  w = open(`https://test.drednot.io/?invite=${location.hash.slice(1)}`, '_parent');
+  w.alert('WIP modded Dredark');
+}
+
+else {
+  w = open(`https://test.drednot.io/`, '_parent');
+  w.alert('WIP modded Dredark');
+}
+  
+</script>
+</body>
+
 </html>
