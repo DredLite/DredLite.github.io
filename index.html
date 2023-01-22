@@ -11,7 +11,7 @@
   <body>
     <p>Loading...</p>
     <script>
-      open(`https://test.drednot.io/invite/${location.hash}`);
+      open(`https://test.drednot.io/invite/${location.hash.slice(1)}`, '_parent');
     </script>
   </body>
 </html>
